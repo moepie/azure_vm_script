@@ -1,0 +1,47 @@
+Index: app.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app.py	(revision 5fddd19e9ec16ab9a798e40b47b41123c19ca518)
++++ app.py	(date 1631172784439)
+@@ -15,7 +15,7 @@
+ # 静态路由,最简单页面
+ @node.route('/', methods=['GET'])
+ def index():
+-    return f"This is QYTAKS:{socket.gethostname()}, My IP is {socket.gethostbyname(socket.gethostname())}"
++    return f"This is moepie:{socket.gethostname()}, My IP is {socket.gethostbyname(socket.gethostname())}"
+ 
+ 
+ if __name__ == "__main__":
+Index: python_flask.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- python_flask.sh	(revision 5fddd19e9ec16ab9a798e40b47b41123c19ca518)
++++ python_flask.sh	(date 1631172691396)
+@@ -2,6 +2,6 @@
+ 
+ yum install -y git gcc python3 python3-devel
+ pip3 install flask
+-git clone https://github.com/collinsctk/Azure_K8S_DevOps.git
++git clone https://git@github.com:moepie/Azure_K8S_DevOps.git
+ cd Azure_K8S_DevOps/
+ python3 app.py &
+\ No newline at end of file
+Index: lb_init.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lb_init.sh	(revision 5fddd19e9ec16ab9a798e40b47b41123c19ca518)
++++ lb_init.sh	(date 1631172808101)
+@@ -2,6 +2,6 @@
+ 
+ yum install -y git gcc python3 python3-devel
+ pip3 install flask
+-git clone https://github.com/collinsctk/Azure_K8S_DevOps.git
++git clone https://git@github.com:moepie/Azure_K8S_DevOps.git
+ cd Azure_K8S_DevOps/
+ python3 app.py &
